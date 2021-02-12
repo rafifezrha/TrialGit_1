@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+
         Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
         Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
@@ -63,6 +64,46 @@ Partial Class Form1
         Me.Chart1.Size = New System.Drawing.Size(300, 300)
         Me.Chart1.TabIndex = 2
         Me.Chart1.Text = "Chart1"
+=======
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+          Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(12, 12)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 0
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(12, 73)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(474, 73)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(88, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "tambah dari rapip"
+        Me.Button1.Location = New System.Drawing.Point(617, 385)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 35)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(87, 13)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "Radit add a label"
+
         '
         'Label2
         '
@@ -78,20 +119,40 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.Label1)
+=======
+
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.TextBox2)
+=======
+    Me.Controls.Add(Me.Button1)
+=======
+        Me.Controls.Add(Me.Label1)
+
+
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents TextBox1 As TextBox
+
     Friend WithEvents Label1 As Label
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
     Friend WithEvents Label2 As Label
+=======
+
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label1 As Label
+=======
+  Friend WithEvents Button1 As Button
+=======
+    Friend WithEvents Label1 As Label
+
 End Class
